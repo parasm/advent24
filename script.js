@@ -12,7 +12,7 @@ target.each(function(){
   if (todaysDate < day){
     $(this).parent().addClass('future');
   }
-  if (todaysDate >= day){
+  if (todaysDate >= day || todaysDate+1 == day){
     $(this).parent().addClass('past')
   }
 });
